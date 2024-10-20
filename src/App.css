@@ -1,0 +1,6 @@
+#root {
+  background: var(--main-bg);
+  margin: 0 auto;
+  width: clamp(320px, 100%, 1440px);
+  min-height: 100vh;
+}
