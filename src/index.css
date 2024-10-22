@@ -13,6 +13,15 @@
   --blue: hsl(198, 60%, 50%);
   --light-red: hsl(0, 100%, 63%);
 
+  --step--2: clamp(0.6076rem, 0.5984rem + 0.0462vw, 0.64rem);
+  --step--1: clamp(0.7292rem, 0.7089rem + 0.1012vw, 0.8rem);
+  --step-0: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+  --step-1: clamp(1.05rem, 0.9929rem + 0.2857vw, 1.25rem);
+  --step-2: clamp(1.26rem, 1.1736rem + 0.4321vw, 1.5625rem);
+  --step-3: clamp(1.512rem, 1.386rem + 0.6302vw, 1.9531rem);
+  --step-4: clamp(1.8144rem, 1.6353rem + 0.8957vw, 2.4414rem);
+  --step-5: clamp(2.1773rem, 1.9274rem + 1.2493vw, 3.0518rem);
+
   font-family: 'Raleway', 'Open Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
   background-color: rgb(249, 251, 253);
