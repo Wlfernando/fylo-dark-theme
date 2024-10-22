@@ -1,0 +1,18 @@
+.service {
+  padding: 1rem;
+
+  .service__card {
+    text-align: center;
+    gap: 1rem;
+    display: grid;
+    place-items: center;
+  }
+
+  .service__title {
+    font-size: var(--step-2);
+  }
+
+  .service__text {
+    font-size: var(--step-0);
+  }
+}
