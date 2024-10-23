@@ -1,0 +1,24 @@
+.tour {
+  .tour__link {
+    text-decoration-line: none;
+    color: var(--cyan);
+    border-bottom: 1px solid var(--cyan);
+    padding-bottom: .5rem;
+
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    height: max-content;
+    width: max-content;
+  }
+  
+  .tour__arrow {
+    width: 20px;
+    aspect-ratio: 1 / 1;
+    transition: translate 150ms ease-in-out;
+    
+    .tour__link:hover > & {
+      translate: 10px;
+    }
+  }
+}
