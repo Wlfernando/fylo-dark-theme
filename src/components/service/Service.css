@@ -6,6 +6,8 @@
     gap: 1rem;
     display: grid;
     place-items: center;
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .service__title {
