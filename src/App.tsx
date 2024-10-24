@@ -1,4 +1,5 @@
 import './App.css'
+import AccessibilityForm from './components/accessibility-form/AccessibilityForm'
 import Header from './components/header/Header'
 import Hero from './components/hero/Hero'
 import Service from './components/service/Service'
@@ -14,6 +15,7 @@ function App() {
         <Service />
         <Tour />
         <SuccessCases />
+        <AccessibilityForm />
       </main>
     </>
   )
