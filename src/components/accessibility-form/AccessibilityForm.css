@@ -1,13 +1,18 @@
 .accessibility-form {
-  background-color: var(--intro-and-email-bg);
-  max-width: 800px;
-  margin: 1rem;
-  text-align: center;
   display: grid;
-  row-gap: 20px;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  place-self: center;
+  place-content: center;
+  grid-template-columns: minmax(min-content, 800px);
+  background-image: linear-gradient(transparent 50%, hsl(216, 53%, 9%) 50%);
+  
+  .accessibility-form__container {
+    text-align: center;
+    background-color: var(--intro-and-email-bg);
+    margin: 1rem;
+    display: grid;
+    row-gap: 20px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+  }
 
   .accessibility-form__title {
     font-size: var(--step-3);
