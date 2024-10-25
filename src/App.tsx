@@ -1,5 +1,6 @@
 import './App.css'
 import AccessibilityForm from './components/accessibility-form/AccessibilityForm'
+import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
 import Hero from './components/hero/Hero'
 import Service from './components/service/Service'
@@ -17,6 +18,7 @@ function App() {
         <SuccessCases />
         <AccessibilityForm />
       </main>
+      <Footer />
     </>
   )
 }
