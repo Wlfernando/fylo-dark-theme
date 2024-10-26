@@ -39,11 +39,22 @@
   .footer__anchor {
     text-decoration-line: none;
     color: inherit;
+    opacity: .8;
+    transition: opacity 150ms ease;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .footer__icon {
     width: 25px;
     aspect-ratio: 1 / 1;
+    transition: filter 150ms ease;
+
+    &:hover {
+      filter: invert(70%) sepia(82%) saturate(295%) hue-rotate(138deg) brightness(200%) contrast(81%);
+    }
   }
 
   @media screen and (width < 1044px) {

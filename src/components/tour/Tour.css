@@ -10,15 +10,25 @@
     gap: 1rem;
     height: max-content;
     width: max-content;
+    transition: 150ms ease;
+    transition-property: color, border-color;
+
+    &:hover {
+      color: white;
+      border-color: white;
+    }
   }
   
   .tour__arrow {
     width: 20px;
     aspect-ratio: 1 / 1;
-    transition: translate 150ms ease-in-out;
+    transition: 
+      translate 150ms ease-in-out,
+      filter 100ms ease-in-out;
     
     .tour__link:hover > & {
       translate: 10px;
+      filter: saturate(0);
     }
   }
 }

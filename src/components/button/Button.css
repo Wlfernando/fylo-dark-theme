@@ -4,4 +4,9 @@
   background-image: linear-gradient(45deg, var(--cyan), var(--blue));
   padding: 1rem;
   border-radius: 25px;
+  transition: filter 150ms ease;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
 }
