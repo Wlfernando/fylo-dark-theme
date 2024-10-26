@@ -1,5 +1,5 @@
 #root {
-  background: var(--main-bg);
+  background-color: var(--intro-and-email-bg);
   margin: 0 auto;
   width: clamp(320px, 100%, 1440px);
   min-height: 100vh;
@@ -7,6 +7,13 @@
 }
 
 .landing-page {
+  --heights-hero: 703px;
+
   display: grid;
   gap: 5rem;
+  background-image: linear-gradient(transparent var(--heights-hero), var(--main-bg) var(--heights-hero));
+  
+  > :first-child {
+    background: bottom / contain no-repeat url('./assets/bg-curvy-desktop.svg');
+  }
 }
