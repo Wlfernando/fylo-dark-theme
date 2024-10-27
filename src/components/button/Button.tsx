@@ -1,9 +1,21 @@
 import './Button.css'
 
-export default function Button({children, className = ''}: {children: string, className?: string}) {
+export default function Button({
+  children,
+  className = '',
+  submit = false,
+}: {
+  children: string,
+  className?: string;
+  submit?: boolean;
+}) {
+  const btnClass = `button${className && ` ${className}`}`;
+
+  if(submit) return <button className={btnClass}>{children}</button>
+
   return (
     <>
-      <a className={`button${className && ` ${className}`}`} href="#">{children}</a>
+      <a className={btnClass} href="#">{children}</a>
     </>
   )
 }

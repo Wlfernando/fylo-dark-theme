@@ -42,4 +42,10 @@
   .accessibility-form__btn {
     flex: 1 1 max-content;
   }
+
+  .accessibility-form__error {
+    color: var(--light-red);
+    font-size: var(--step--1);
+    flex: 1 0 100%;
+  }
 }
