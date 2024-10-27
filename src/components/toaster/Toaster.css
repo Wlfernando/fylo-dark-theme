@@ -1,0 +1,47 @@
+.toaster {
+  position: fixed;
+  top: 1.5rem;
+  background-color: var(--blue);
+  color: white;
+  padding: .75rem;
+  border-radius: .5rem;
+  box-shadow: 2px 2px 10px black;
+  justify-self: center;
+  transition: 250ms ease-in-out allow-discrete;
+  animation: fade-out 4s ease-in-out 1s forwards;
+
+  @starting-style {
+    opacity: 0;
+    translate: 0 -.75rem;
+  }
+
+  .toaster__hgroup {
+    display: flex;
+    gap: .5rem;
+  }
+
+  .toaster__mssg, .toaster__tittle {
+    margin-block: 0;
+  }
+
+  .toaster__mssg {
+    opacity: .7;
+    font-size: 95%;
+    font-family: 'Open Sans';
+    margin-top: 1rem;
+  }
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes fade-out {
+  90% {
+    opacity: 1;
+    translate: 0;
+  } 100% {
+    opacity: 0;
+    translate: 0 -.75rem;
+  }
+}
