@@ -8,6 +8,7 @@ import Service from './components/service/Service'
 import SuccessCases from './components/success-cases/SuccessCases'
 import Tour from './components/tour/Tour'
 import Toaster from './components/toaster/Toaster'
+import post from './lib/email'
 
 type DivSelector = HTMLElement | null
 
@@ -33,7 +34,10 @@ function App() {
         <Service />
         <Tour />
         <SuccessCases />
-        <AccessibilityForm send={() => setToaster(true)} />
+        <AccessibilityForm send={(email: string) => {
+          post(email)
+          setToaster(true)
+        }} />
         {toaster && <Toaster remove={() => setToaster(false) }/>}
       </main>
       <Footer />

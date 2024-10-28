@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import Button from "../button/Button";
 import './AccessibilityForm.css'
 
-const emailValidate = /^[a-zA-Z0-9_.+]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/
+const emailValidation = /^[a-zA-Z0-9_.+]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/
 
 export default function AccessibilityForm({
   send,
@@ -26,7 +26,7 @@ export default function AccessibilityForm({
               const email = emailRef.current!
               const { value } = email
 
-              if (!emailValidate.test(value)) {
+              if (!emailValidation.test(value)) {
                 const message = 'Please enter a valid email address'
                 email.setCustomValidity(message)
                 setError(message)
@@ -36,7 +36,7 @@ export default function AccessibilityForm({
                 setError('')
               }
 
-              send()
+              send(value)
               e.currentTarget.reset()
             }}
           >
