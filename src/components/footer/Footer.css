@@ -8,7 +8,7 @@
 
   .footer__logo {
     flex: 0 1 100%;
-    height: 50px;
+    height: 75px;
   }
 
   .footer__address {
@@ -55,6 +55,13 @@
     &:hover {
       filter: invert(70%) sepia(82%) saturate(295%) hue-rotate(138deg) brightness(200%) contrast(81%);
     }
+  }
+
+  .footer__text {
+    flex: 0 0 100%;
+    text-align: center;
+    font-size: var(--step-0);
+    margin-top: 1rem;
   }
 
   @media screen and (width < 1044px) {

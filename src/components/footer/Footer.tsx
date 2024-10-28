@@ -47,6 +47,7 @@ export default function Footer() {
         <Anchors array={fakeLinks.slice(0,4)} />
         <Anchors array={fakeLinks.slice(4,7)} />
         <Anchors array={fakeLinks.slice(7).map((s, i) => insertImg(s, alternativeText[i]))} />
+        <p className='footer__text'>Challenge from <a href="https://www.frontendmentor.io/">Frontend Mentor</a>. Coded by Fernando A. Malfavón &copy; 2024.</p>
       </footer>
     </>
   )
