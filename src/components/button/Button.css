@@ -5,6 +5,7 @@
   padding: 1rem;
   border-radius: 25px;
   transition: filter 150ms ease;
+  border-color: transparent;
 
   &:hover {
     filter: brightness(1.2);
